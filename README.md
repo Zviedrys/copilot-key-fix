@@ -1,10 +1,10 @@
 # ASUS Copilot Key Fix — Disable / Remap Copilot Key to Right Ctrl
 
-A proper fix for the Copilot key on ASUS, Lenovo, HP, Dell and other Windows laptops. Unlike simple remapping guides, this actually intercepts all three key events the Copilot button sends.
+A proper fix for the Copilot key on ASUS, Lenovo, HP, Dell, Acer, Samsung, and Microsoft Surface laptops. Unlike simple remapping guides, this actually intercepts all three key events the Copilot button sends.
 
 ## The Problem
 
-Many laptops (2024+) replaced the **Right Ctrl** key with a **Copilot** key. Pressing it launches Microsoft Copilot instead of acting as a modifier — making it useless for keyboard shortcuts, gaming, or any workflow that depends on Right Ctrl. This affects ASUS, Lenovo, HP, Dell, and other brands.
+Many laptops (2024+) replaced the **Right Ctrl** key with a **Copilot** key. Pressing it launches Microsoft Copilot instead of acting as a modifier — making it useless for keyboard shortcuts, gaming, or any workflow that depends on Right Ctrl. This affects ASUS, Lenovo, HP, Dell, Acer, Samsung, and Microsoft Surface models.
 
 ## Why Most "Fixes" Don't Work
 
@@ -124,8 +124,8 @@ Contributions are welcome! Here is how you can help:
 **How do I disable the Copilot key on my ASUS laptop?**
 Run this fix — it intercepts the Copilot key and remaps it to Right Ctrl. You can also modify the script to map it to any other key.
 
-**Does this work on Lenovo / HP / Dell laptops?**
-If your laptop's Copilot key sends the same LWin+LShift+F23 sequence, yes. Run `detectar_tecla.ps1` to check. If it sends different codes, open an issue and we'll add support.
+**Does this work on Lenovo / HP / Dell / Acer / Samsung / Surface laptops?**
+Yes. Microsoft mandated the same LWin+LShift+F23 signal across all brands. See [SUPPORTED_DEVICES.md](SUPPORTED_DEVICES.md) for a full list. Run `detectar_tecla.ps1` to verify your specific model.
 
 **Can I remap the Copilot key to something other than Right Ctrl?**
 Yes. Edit `copilot_a_ctrl.ahk` and change the `Send "{RCtrl}"` line to whatever key you prefer.
